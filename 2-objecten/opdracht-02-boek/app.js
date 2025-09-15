@@ -14,3 +14,24 @@
 // In de theorie staat uitgelegd hoe je dit moet doen.
 
 // Let op: in de code conventions staat dat je de code in het Engels moet schrijven!
+
+// Create the book object with English property names
+const book = {
+  title: "The Art of Learning",
+  author: "Josh Waitzkin",
+  publisher: "Free Press",
+  year: 2007,
+  sold: 250000,
+  price: "€19.99"
+};
+
+const outputDiv = document.querySelector(".output");
+
+outputDiv.innerHTML = `
+<p>Title: ${book.title}</p>
+<p>Author: ${book.author}</p>
+<p>Publisher: ${book.publisher}</p>
+<p>Year: ${book.year}</p>
+<p>Sold: ${book.sold}</p>
+<p>Price: ${book.price}</p>
+`;

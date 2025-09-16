@@ -23,3 +23,42 @@
 // Toon de wijzigingen op het scherm.
 
 // Gebruik geen arrow function in een object!
+
+let persoon = {
+  naam: "Emma de Vries",
+  leeftijd: 25,
+  geboortedatum: "2000-08-21",
+  geslacht: "Vrouw",
+  inLeven: true,
+  hobbies: ["Schilderen", "Hardlopen", "Piano spelen", "Reizen"],
+
+  veranderNaam: function(nieuweNaam) {
+    this.naam = nieuweNaam;
+    this.toon();
+  },
+
+  veranderInLeven: function(status) {
+    this.inLeven = status;
+    this.toon();
+  },
+
+  voegHobbyToe: function(hobby) {
+    this.hobbies.push(hobby);
+    this.toon();
+  },
+
+  toon: function() {
+    document.getElementById("persoonDiv").innerHTML = `
+      <p>Naam: ${this.naam}</p>
+      <p>Leeftijd: ${this.leeftijd}</p>
+      <p>Geboortedatum: ${this.geboortedatum}</p>
+      <p>Geslacht: ${this.geslacht}</p>
+      <p>In leven: ${this.inLeven ? "Ja" : "Nee"}</p>
+      <p>Hobby's: ${this.hobbies.join(", ")}</p>
+    `;
+  }
+};
+
+window.onload = function() {
+  persoon.toon();
+};

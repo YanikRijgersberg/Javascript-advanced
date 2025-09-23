@@ -28,37 +28,52 @@ let persoon = {
   naam: "Emma de Vries",
   leeftijd: 25,
   geboortedatum: "2000-08-21",
-  geslacht: "Vrouw",
+  geslacht: "vrouw",
   inLeven: true,
-  hobbies: ["Schilderen", "Hardlopen", "Piano spelen", "Reizen"],
-
-  veranderNaam: function(nieuweNaam) {
-    this.naam = nieuweNaam;
-    this.toon();
+  hobbies: ["lezen", "reizen", "fotografie", "koken"],
+  verandernaam: function(name){
+    this.naam = name
+   
+    
   },
-
-  veranderInLeven: function(status) {
-    this.inLeven = status;
-    this.toon();
+  veranderAge: function(age){
+    this.leeftijd = age
   },
+veranderbirthyear: function(birthyear){
+  this.geboortedatum = birthyear
+},
+verandersex: function(sex){
+this.geslacht = sex
+},
+veranderalive: function(alive){
+  this.inLeven = alive
+},
+verannderhobby: function(hobby){
+  this.hobbies = hobby
+},
+}
 
-  voegHobbyToe: function(hobby) {
-    this.hobbies.push(hobby);
-    this.toon();
-  },
 
-  toon: function() {
-    document.getElementById("persoonDiv").innerHTML = `
-      <p>Naam: ${this.naam}</p>
-      <p>Leeftijd: ${this.leeftijd}</p>
-      <p>Geboortedatum: ${this.geboortedatum}</p>
-      <p>Geslacht: ${this.geslacht}</p>
-      <p>In leven: ${this.inLeven ? "Ja" : "Nee"}</p>
-      <p>Hobby's: ${this.hobbies.join(", ")}</p>
-    `;
-  }
-};
+const outputDiv = document.querySelector("#persoonDiv");
 
-window.onload = function() {
-  persoon.toon();
-};
+persoon.verandernaam("yanik")
+persoon.veranderAge("39")
+persoon.veranderbirthyear("1984-05-15")
+persoon.verandersex("man")
+persoon.veranderalive(false)
+persoon.verannderhobby(["voetbal","films","series","muziek"])
+
+
+
+
+
+
+outputDiv.innerHTML = `
+<p>Naam: ${persoon.naam}</p>
+<p>Leeftijd: ${persoon.leeftijd}</p>
+<p>geboortedatum: ${persoon.geboortedatum}</p>
+<p>Geslacht: ${persoon.geslacht}</p>
+<p>In leven: ${persoon.inLeven}</p>
+<p>Hobby's: ${persoon.hobbies.join(", ")}</p>
+`;
+   

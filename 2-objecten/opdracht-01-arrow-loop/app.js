@@ -7,13 +7,15 @@
 // Roep de functie op (het klopt dat je nog niets ziet)
 // Loop met een for/of loop door de array en toon alle items in de array in je console
 
-let marvel = ["Iron Man", "The Avengers", "Black Panther", "Guardians of the Galaxy"]
-const addMarvel = (film) => {
-    marvel.push(film);
-}
+let marvels = ["Iron Man", "The Avengers", "Black Panther", "Guardians of the Galaxy"];
+const addMarvel = () => {
+    marvels.push("Thor");
+};
 
-addMarvel("Spider-Man: No Way Home");
+addMarvel();
 
-for (const film of marvel) {
+for (const film of marvels) {
     console.log(film);
 }
+
+

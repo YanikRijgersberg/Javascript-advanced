@@ -13,10 +13,6 @@ function slaOpNaam() {
     return;
   }
 
-  if (naam === "nigger") {
-    alert("ofensive word is not allowed");
-    return;
-  }
 
   // Sla naam op in localStorage
   localStorage.setItem("naam", naam);

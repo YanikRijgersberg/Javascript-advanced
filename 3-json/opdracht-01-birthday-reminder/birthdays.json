@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Emma Janssen",
+    "age": 25,
+    "image": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lucas de Vries",
+    "age": 30,
+    "image": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sophie Bakker",
+    "age": 22,
+    "image": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Noah Visser",
+    "age": 28,
+    "image": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lotte Willems",
+    "age": 27,
+    "image": "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Milan Smits",
+    "age": 32,
+    "image": "https://randomuser.me/api/portraits/men/6.jpg"
+  }
+]
